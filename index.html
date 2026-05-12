@@ -5,71 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BSmart Mobile</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
       margin: 0;
-      padding: 40px 20px;
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(11,92,138,0.25), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(26,163,255,0.18), transparent 30%),
+        #07131d;
+      color: #f8fafc;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    .container {
-      max-width: 800px;
+    .wrapper {
+      max-width: 1200px;
       margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 32px 20px 60px;
     }
 
-    h1 {
-      color: #0B5C8A;
-      margin-top: 0;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 70px;
     }
 
-    p {
-      line-height: 1.6;
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -1px;
     }
 
-    a {
-      color: #0B5C8A;
+    .logo span {
+      color: #4fc3ff;
+    }
+
+    .nav a {
+      color: #dbeafe;
       text-decoration: none;
-      font-weight: bold;
+      margin-left: 22px;
+      font-weight: 500;
+      transition: 0.2s ease;
     }
 
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #6b7280;
+    .nav a:hover {
+      color: white;
     }
-  </style>
-</head>
-<body>
 
-  <div class="container">
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
 
-    <h1>BSmart Mobile</h1>
+    .hero h1 {
+      font-size: clamp(48px, 7vw, 84px);
+      line-height: 0.95;
+      margin: 0 0 24px;
+      letter-spacing: -4px;
+    }
 
-    <p>
-      BSmart Mobile is a modern task management and operational workflow app
-      designed for business and engineering teams.
-    </p>
+    .hero h1 span {
+      color: #4fc3ff;
+    }
 
-    <p>
-      The application supports task tracking, attachments, media capture,
-      offline support, and workflow management.
-    </p>
-
-    <p>
-      <a href="privacy.html">View Privacy Policy</a>
-    </p>
-
-    <div class="footer">
-      © 2026 BSmart Mobile
-    </div>
-
-  </div>
-
-</body>
+    .hero p {
 </html>
